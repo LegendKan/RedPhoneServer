@@ -63,5 +63,5 @@ ADMINS = (
     ("admin", "admin@example.com"),
 )
 
-certfile="/path/to/crt.crt"
-keyfile="/path/to/crt.key"
+CERTFILE="/path/to/crt.crt"
+KEYFILE="/path/to/crt.key"

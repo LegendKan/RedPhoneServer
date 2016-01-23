@@ -13,10 +13,7 @@ from datetime import datetime
 from mredphone.application import Application
 from mredphone.connection import Connection
 from mredphone.urls import urlpatterns as urls
-
-from django.conf.settings import (
-    certfile, keyfile
-)
+from django.conf import settings
 
 class RedphoneMaster(threading.Thread):
     """
@@ -108,6 +105,7 @@ class RedphoneMaster(threading.Thread):
 if __name__ == "__main__":
     import django
     django.setup()
+    from django.conf import settings
     try:
         bindsocket = socket.socket()
         bindsocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -117,6 +115,9 @@ if __name__ == "__main__":
         application = Application(*urls)
         redphone_master = RedphoneMaster(application)
         redphone_master.start()
+
+        certfile = settings.CERTFILE
+        keyfile = settings.KEYFILE
 
         while True:
             newsocket, addr = bindsocket.accept()

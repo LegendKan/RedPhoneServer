@@ -7,10 +7,8 @@ from datetime import datetime
 
 class Connection(ssl.SSLSocket):
 
-    def __init__(self, sock=None, addr=None,
+    def __init__(self, sock, addr, certfile, keyfile):
         """ Connection(unsecure_socket, addr, certfile, keyfile) """
-                 certfile,
-                 keyfile):
         sock.setblocking(0)
         super(Connection, self).__init__(
             sock,
