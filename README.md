@@ -21,6 +21,6 @@ have enough time for modifications.
 
 How to start:
 
-./redphonectl start
+python tornado_red.py 8080
 
 python master.py
