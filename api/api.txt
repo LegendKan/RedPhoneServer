@@ -1,0 +1,118 @@
+#./src/org/thoughtcrime/redphone/signaling/RedPhoneAccountManager.java 
+
+
+"/api/v1/accounts/gcm/"
+#meta: {
+  'HTTP_AUTHORIZATION': 
+  'Basic KzM4MDkzODgzOTgxNTpaSnh6TVV2UVVCQUh6Qk1CQm9MLy9HTkc=', 
+  'wsgi.multithread': False, 
+  'SCRIPT_NAME': u'', 
+  'wsgi.input': <_io.BytesIO object at 0x7f8e8b67e6b0>, 
+  'REQUEST_METHOD': 'DELETE', 
+  'HTTP_HOST': 'textserver.s1z.info', 
+  'PATH_INFO': u'/api/v1/accounts/gcm/', 
+  'SERVER_PROTOCOL': 'HTTP/1.0', 
+  'QUERY_STRING': '', 
+  'HTTP_CONNECTION': 'close', 
+  'HTTP_X_REAL_IP': '109.86.71.25', 
+  'CONTENT_LENGTH': '0', 
+  'HTTP_USER_AGENT': 'okhttp/2.2.0', 
+  'wsgi.version': (1, 0), 
+  'SERVER_NAME': 'textserver.s1z.info', 
+  'REMOTE_ADDR': '109.95.52.67', 
+  'wsgi.run_once': False, 
+  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f8e8fa831e0>, 
+  'wsgi.multiprocess': True, 
+  'wsgi.url_scheme': 'http', 
+  'HTTP_X_FORWARDED_FOR': '109.86.71.25', 
+  'HTTP_X_FORWARDED_PROTOCOL': 'http', 
+  'SERVER_PORT': '80', 
+  'HTTP_ACCEPT_ENCODING': 'gzip'
+}
+#method: DELETE
+#body: 
+
+"PUT /api/v1/accounts/token/+380938839815:1451160834:ac569750f4011497344f"
+phone,id,key: +380938839815 1451160834 ac569750f4011497344f
+meta: {
+  'HTTP_AUTHORIZATION': 'Basic KzM4MDkzODgzOTgxNTpmVWVNUU14L1p6WU9rU3FaSlJ3dlVURSs=', 
+  'CONTENT_TYPE': 'application/json; charset=utf-8', 
+  'wsgi.multithread': False, 
+  'SCRIPT_NAME': u'', 
+  'wsgi.input': <_io.BytesIO object at 0x7f8e8b5577d0>, 
+  'REQUEST_METHOD': 'PUT', 
+  'HTTP_HOST': 'textserver.s1z.info', 
+  'PATH_INFO': u'/api/v1/accounts/token/+380938839815:1451160834:ac569750f4011497344f', 
+  'SERVER_PROTOCOL': 'HTTP/1.0', 
+  'QUERY_STRING': '', 
+  'HTTP_CONNECTION': 'close', 
+  'HTTP_X_REAL_IP': '109.86.71.25', 
+  'CONTENT_LENGTH': '272', 
+  'HTTP_USER_AGENT': 'okhttp/2.2.0', 
+  'wsgi.version': (1, 0), 
+  'SERVER_NAME': 'textserver.s1z.info', 
+  'REMOTE_ADDR': '109.95.52.67', 
+  'wsgi.run_once': False, 
+  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f8e8fa831e0>, 
+  'wsgi.multiprocess': True, 
+  'wsgi.url_scheme': 'http', 
+  'HTTP_X_FORWARDED_FOR': '109.86.71.25', 
+  'HTTP_X_FORWARDED_PROTOCOL': 'http', 
+  'SERVER_PORT': '80', 
+  'HTTP_ACCEPT_ENCODING': 'gzip'
+}
+mathod PUT
+body: {
+  "gcmRegistrationId":"APA91bEt_dTFgtEg9EjBvwkD5Z_bf7FsPGiiY01Icr0ihrw3qCMUHBOCAHAWwWLrLIIDL6IyIo8jA_vd9fVGoKknb1hv_1p8kVhdv97S3ySgYmaPyF61fYBmJK5OxmU0f9GeXhN57_UM",
+  "signalingKey":"Hguk+Wy6lj7rNkstlhV22vCtNy7gyi29zvCOl8lyCKSG5moawfQqGIukjalItiYZKRvweA==",
+  "textsecure":true
+}
+
+"PUT /api/v1/accounts/token/+380938839815:1451160834:ac569750f4011497344f"
+phone,id,key: +380938839815 1451161654 3e08b414892839ee0e67
+meta: {
+  'HTTP_AUTHORIZATION': 'Basic KzM4MDkzODgzOTgxNTpOOU5zUXllSGx0TnlWR3RXWjFxcTRERTM=', 
+  'CONTENT_TYPE': 'application/json; charset=utf-8', 
+  'wsgi.multithread': False, 
+  'SCRIPT_NAME': u'', 
+  'wsgi.input': <_io.BytesIO object at 0x7f8e8b5579b0>, 
+  'REQUEST_METHOD': 'PUT', 
+  'HTTP_HOST': 'textserver.s1z.info', 
+  'PATH_INFO': u'/api/v1/accounts/token/+380938839815:1451161654:3e08b414892839ee0e67', 
+  'SERVER_PROTOCOL': 'HTTP/1.0', 
+  'QUERY_STRING': '', 
+  'HTTP_CONNECTION': 'close', 
+  'HTTP_X_REAL_IP': '109.86.71.25', 
+  'HTTP_REMOTE_USER': '+380938839815', 
+  'CONTENT_LENGTH': '272', 
+  'HTTP_USER_AGENT': 'okhttp/2.2.0', 
+  'wsgi.version': (1, 0), 
+  'SERVER_NAME': 'textserver.s1z.info', 
+  'REMOTE_ADDR': '109.95.52.67', 
+  'wsgi.run_once': False, 
+  'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f8e8fa831e0>, 
+  'wsgi.multiprocess': True, 
+  'wsgi.url_scheme': 'http', 
+  'HTTP_X_FORWARDED_FOR': '109.86.71.25', 
+  'HTTP_X_FORWARDED_PROTOCOL': 'http', 
+  'SERVER_PORT': '80', 
+  'HTTP_ACCEPT_ENCODING': 'gzip'
+}
+mathod PUT
+body: {
+  "gcmRegistrationId":"APA91bEjIeDwOxTzupPR9npvzpmT-kc2qzfUYLPYMdEwtwnKC5O07Ajc9p8FlTTE7Bluh9Xtg2FxjS1CHJax1xp4-9Y5r5MqzZR3U_tOy5Jpz2-io1nrUJ_WSePI8YU8kBsJZgwahqqW",
+  "signalingKey":"qpQqtsWhc44UEAp5RQQ8nmPrAeias7LnU1AnrEdB8eA8t8lTiDSV+nHSxT3RKEmQ0juYJg==",
+  "textsecure":true
+}
+
+
+# new
+phone,id,key: +380938839815 1451257906 838e1fe0e9042a8853a8
+meta: {'HTTP_AUTHORIZATION': 'Basic KzM4MDkzODgzOTgxNTpMSXh0RDIxL0tIUWZxeDRoK2FzTlQzdUg=', 'CONTENT_TYPE': 'application/json; charset=utf-8', 'wsgi.multithread': False, 'SCRIPT_NAME': u'', 'wsgi.input': <_io.BytesIO object at 0x7f6a167e6710>, 'REQUEST_METHOD': 'PUT', 'HTTP_HOST': 'textserver.s1z.info', 'PATH_INFO': u'/api/v1/accounts/token/+380938839815:1451257906:838e1fe0e9042a8853a8', 'SERVER_PROTOCOL': 'HTTP/1.0', 'QUERY_STRING': '', 'HTTP_CONNECTION': 'close', 'HTTP_X_REAL_IP': '109.86.71.25', 'CONTENT_LENGTH': '272', 'HTTP_USER_AGENT': 'okhttp/2.2.0', 'wsgi.version': (1, 0), 'SERVER_NAME': 'textserver.s1z.info', 'REMOTE_ADDR': '109.95.52.67', 'wsgi.run_once': False, 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f6a1e59f1e0>, 'wsgi.multiprocess': True, 'wsgi.url_scheme': 'http', 'HTTP_X_FORWARDED_FOR': '109.86.71.25', 'HTTP_X_FORWARDED_PROTOCOL': 'http', 'SERVER_PORT': '80', 'HTTP_ACCEPT_ENCODING': 'gzip'}
+mathod PUT
+body: {"gcmRegistrationId":"APA91bHWFncPX5mNzYM_t_dsd7J3GU6F8XAdMyKZUqSPkN3a0i0tjIOSGZ40xUSlRyWipQa9_lJebhgeWqSkEnfTUJdIQXNNxx1yhVFPZxyz7nXCbPOrqrdiMSK4l-JuqOxHSRDyCe1R","signalingKey":"xFQZY2nVOZNUHYawbRBv7O8+/5jthsKBox4pvOfF0OFbmEhm3BZCtsW7yGyAP5bEresD2w==","textsecure":true}
+
+# delete
+meta: {'HTTP_AUTHORIZATION': 'Basic KzM4MDkzODgzOTgxNTpMSXh0RDIxL0tIUWZxeDRoK2FzTlQzdUg=', 'wsgi.multithread': False, 'SCRIPT_NAME': u'', 'wsgi.input': <_io.BytesIO object at 0x7f6a15e06830>, 'REQUEST_METHOD': 'DELETE', 'HTTP_HOST': 'textserver.s1z.info', 'PATH_INFO': u'/api/v1/accounts/gcm/', 'SERVER_PROTOCOL': 'HTTP/1.0', 'QUERY_STRING': '', 'HTTP_CONNECTION': 'close', 'HTTP_X_REAL_IP': '109.86.71.25', 'CONTENT_LENGTH': '0', 'HTTP_USER_AGENT': 'okhttp/2.2.0', 'wsgi.version': (1, 0), 'SERVER_NAME': 'textserver.s1z.info', 'REMOTE_ADDR': '109.95.52.67', 'wsgi.run_once': False, 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x7f6a1e59f1e0>, 'wsgi.multiprocess': True, 'wsgi.url_scheme': 'http', 'HTTP_X_FORWARDED_FOR': '109.86.71.25', 'HTTP_X_FORWARDED_PROTOCOL': 'http', 'SERVER_PORT': '80', 'HTTP_ACCEPT_ENCODING': 'gzip'}
+method: DELETE
+body: 

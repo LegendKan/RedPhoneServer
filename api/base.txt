@@ -1,0 +1,30 @@
+ 49 | +380938839815 | 
+{
+  "number":"+380938839815",
+  "devices":[
+    {
+      "id":1,
+      "name":null,
+      "authToken":"0172a15f3da35491f6ccb050de80635ab47fbe5f",
+      "salt":"1562766083",
+      "signalingKey":"xepuIVpX9/P0GQA/iMaSRGrVKBWWfmzfH/kSY27E2u+NMrAvJRb87c6AgTbQBer5fmZzGw==",
+      "gcmId":"APA91bFxTm1gq_CgZIBXmUC9Vh46ZBxiqEsV7Tc-YXmSUMr0j80spr-fz7VtV4KR5ZTdDuin6T_UqTfnT_LLQqmPiB4XTQZ7M-zuFpcBx9C0gXb89_g8Af20Isydj-ETRNDEsjtmPqOz",
+      "apnId":null,
+      "voipApnId":null,
+      "pushTimestamp":1451162150080,
+      "fetchesMessages":true,
+      "registrationId":13571,
+      "signedPreKey":{
+        "keyId":12955939,
+        "publicKey":"BUy8DD8c1QfrXbKcl/5Tc4IDPPrL3ijyyIc7mv3q+34t",
+        "signature":"fg01XV/p+wD+TyKln/QlXzMfQe+eB2dg83QI0wnqqdSQy33zcSncvScv8vKJ45anrl59iduT1BwO6bAwcxLKDg"
+      },
+      "lastSeen":1451174400000,
+      "created":1451162148671,
+      "voice":true,
+      "userAgent":"OWA"
+    }
+  ],
+  "identityKey":"Bcz6oAEpTIfnNYad3OXWJbQdI2GVjCcmEyVH11dBFcMD"
+}
+ 43 | +380731041454 | {"number":"+380731041454","devices":[{"id":1,"name":null,"authToken":"143f4685f5b4042dcd1cbff3a2891fd05452dff5","salt":"1206726131","signalingKey":"MNbdHYA9f/VyoBnnR80isFlzmzSQSRvRaAMs2T5NqfZbWtjMYvvB/WxKVAUSuwsu0UJyxQ==","gcmId":"APA91bGpZpx9nR73kAdra6wvc_Y8hppW5r6xf2g8WZSmdkHByaFI5rzcIfrhWN1WjT7KhRdnAqtqd3bg6UeKtFaNZl5jjuSfa-u0ZqD2TggfCgPA7GmDcl3mAsQ48IIviGWFv5MZpBI5","apnId":null,"voipApnId":null,"pushTimestamp":1451068402870,"fetchesMessages":true,"registrationId":8522,"signedPreKey":{"keyId":6405501,"publicKey":"BQu2rE11JbWqla9urQkxVmyZCbYlpmx6ZYZyztvpokAr","signature":"tDqxG4YcmlPvuG4xlOOTKcKUNkLedm8GD5tw3GI7g2VXiyKUoeKawcUz6hyYW0FgGuBTvJN88Bz6E4qwS1isAw"},"lastSeen":1451174400000,"created":1451068401857,"voice":true,"userAgent":"OWA"}],"identityKey":"BfPeZcLdqUF73pdxtdulXxf8GqmV7V4CR2bQo0fnSHlj"}

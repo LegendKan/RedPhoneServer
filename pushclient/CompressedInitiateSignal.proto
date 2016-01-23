@@ -1,0 +1,9 @@
+package redphone;
+
+message CompressedInitiateSignal {
+  required string initiator = 1;
+  required int32 sessionId = 2;
+  required int32 port = 3;
+  required string serverName = 4;
+  required int32 version = 5;
+}
