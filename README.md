@@ -20,5 +20,7 @@ with the django(with wsgi and app), but something went wrong...Haven't
 have enough time for modifications.
 
 How to start:
+
 ./redphonectl start
+
 python master.py
