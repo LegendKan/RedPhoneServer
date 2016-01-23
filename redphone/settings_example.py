@@ -62,3 +62,6 @@ STATIC_URL = '/static/'
 ADMINS = (
     ("admin", "admin@example.com"),
 )
+
+certfile="/path/to/crt.crt"
+keyfile="/path/to/crt.key"

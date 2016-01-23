@@ -14,6 +14,10 @@ from mredphone.application import Application
 from mredphone.connection import Connection
 from mredphone.urls import urlpatterns as urls
 
+from django.conf.settings import (
+    certfile, keyfile
+)
+
 class RedphoneMaster(threading.Thread):
     """
         Main worker class extended from Thread.
@@ -113,9 +117,6 @@ if __name__ == "__main__":
         application = Application(*urls)
         redphone_master = RedphoneMaster(application)
         redphone_master.start()
-
-        certfile="/etc/nginx/ssl/textserver/textserver.s1z.info.crt",
-        keyfile="/etc/nginx/ssl/textserver/textserver.s1z.info.key"):
 
         while True:
             newsocket, addr = bindsocket.accept()
