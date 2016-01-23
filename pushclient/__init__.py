@@ -109,8 +109,9 @@ call_signal = CallSignal()
 
 # temporarily function
 def send_call_push(
-                   account, device_id, number, session_id,
-                   relay_name="textserver",relay_port=5569):
+                   account, device_id,
+                   number, session_id,
+                   relay_name, relay_port):
     device = account.get_device(device_id)
     gcm_id = device.get("gcmId")
     signaling_key = device.get("signalingKey")
@@ -128,6 +129,7 @@ def send_call_push(
         "message": message,
         "call":True
     })
+    # put it ti the settings file
     pc = PushClient("192.168.2.7", "8080", "123", "123")
     pc.send("PUT", "/api/v1/push/gcm", data)
 

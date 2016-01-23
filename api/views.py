@@ -2,7 +2,6 @@ from django.shortcuts import (
     render, render_to_response, RequestContext, HttpResponseRedirect,
     get_object_or_404, render, Http404, HttpResponse
 )
-#from system.decorators import simpleauth
 from mredphone.decorators import simpleauth
 import zlib
 
