@@ -1,10 +1,10 @@
 # RedPhoneServer
-The server work only with REST protocol
+The server work only with REST protocol.
 The ZRTP part is not included.
-This server developed for couple days for fun and posted as is
-without any optimizations for production version.
-It developed without any documentations. I just parsed Signal-Android
-code and write a server for it. Maybe some method not correct, but it work)
+This server developed in rush and posted as is
+without any optimizations for production.
+It developed without any documentations of Original Server (I just parsed Signal-Android
+code and write a server for it). Maybe some methods is incorrect, but it work)
 Use it only for education!
 
 And if you want to use secure calls you need to write your own TURN server
