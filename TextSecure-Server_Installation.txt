@@ -1,0 +1,36 @@
+To start your own TextSecure Server first of all you need to modify your application.
+1. build.gradle:
+    Change this vars: TEXTSECURE_URL, REDPHONE_MASTER_URL, REDPHONE_RELAY_HOST, REDPHONE_PREFIX_NAME.
+    TEXTSECURE_URL - Your TextSecure Server server.
+    REDPHONE_MASTER_URL - Backend domain for calls. "/api/" requests.
+    REDPHONE_RELAY_HOST - Master Relay domain name. "/session/" requests. (TLS over TCP keepalive) port 31337.
+    REDPHONE_PREFIX_NAME - Domain prefix for relay domains.
+2. src/org/throughtcrime/seecuresms/jobs/GcmRefreshJob.java:
+   change REGISTRATION_ID to your app number in the Google developer console(create app with push and you'll get the number).
+3. Create TLS certificates for secure connections.
+    If Your Signal app accept the certificate - ok. That's it.
+        If not, you need to modify this:
+        src/org/throughtcrime/redphone/signaling/SignalingSocket.java,
+        src/org/throughtcrime/redphone/signaling/RedPhoneAccountManager.java
+        org/whispersystems/textsecure/internal/websocket/OkHttpClientWrapper:
+
+        You need to put your TrustManagerFactory with the DER format key of your TLS. example here:
+            http://developer.android.com/training/articles/security-ssl.html#UnknownCa
+
+How to Start TextSecure:
+1. Install Maven, JDK and Cryptography extension.
+2. Make a clone of the WebSocket-Resources
+3. Make a clone of the dropwizard-simpleauth
+4. Make a clone of the TextSecure-Server
+5. Make a clone of the PushServer
+6. Install WebSocket-Resources
+7. Install dropwizard-simpleauth
+8. Install PushServer.
+9. Install TextSecure-Server
+10. Setup services (twilio, push, s3, postgres, redis, apn, gcm)
+11. Setup TextSecure-Server config file.
+12. Setup PushServer config file.
+13. Run the PushServer
+14. Run the TextSecure Server
+
+To create Secure connection use a proxy(for example nginx).
