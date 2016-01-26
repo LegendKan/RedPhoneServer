@@ -11,7 +11,11 @@ from pushclient import send_call_push
 def new_session(request, device_id, number):
     responder = Account.objects.get(number=number)
     manager = request.session_manager
-    session_id = manager.create_session(request.connection)
+    session = manager.create_session(request.connection)
+    session_id = session["id"]
+    relay_name = session["relay_name"]
+    initiator_port = session["initiator_port"]
+    responder_port = session["responder_port"]
     send_call_push(
                    responder,
                    int(device_id),

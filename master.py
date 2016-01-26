@@ -65,6 +65,23 @@ class RedphoneMaster(threading.Thread):
             time.sleep(0.01)
 
     def create_session(self, connection):
+        """ 
+            In this part we need to start relay service and return
+            dict = {
+                session_id,
+                relay_name,
+                initiator_relay_port,
+                responder_relay_port
+            }
+            We need to locate geolocation of the client by ip
+            and start neighbour relay based on this value.
+            #
+            Unfortunately we can provide neighbour relay
+            only for initiator, because responder get
+            relay ip and port values by push message.
+            Communication method update needed.
+            #
+        """
         self.temp += 1
         id = "%i" % self.temp
         self.sessions.update({id:{
@@ -72,7 +89,12 @@ class RedphoneMaster(threading.Thread):
             "responder":None,
         }})
         connection.session = id
-        return id
+        return {
+            "id": id,
+            "relay_name": "textserver",
+            "initiator_port": "5569",
+            "responder_port": "5570"
+        }
 
     def set_responder(self, request, session_id):
         session = self.sessions.get(session_id)
