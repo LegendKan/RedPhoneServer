@@ -26,7 +26,7 @@ How to Start TextSecure:
 6. Install WebSocket-Resources
 7. Install dropwizard-simpleauth
 8. Install PushServer.
-9. Install TextSecure-Server
+9. Install TextSecure-Server. (mvn install -DskipTests)
 10. Setup services (twilio, push, s3, postgres, redis, apn, gcm)
 11. Setup TextSecure-Server config file.
 12. Setup PushServer config file.
