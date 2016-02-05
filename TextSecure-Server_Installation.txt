@@ -34,3 +34,36 @@ How to Start TextSecure:
 14. Run the TextSecure Server
 
 To create Secure connection use a proxy(for example nginx).
+
+How to start Push APN:
+change: src/main/java/org/whispersystems/pushserver/senders/APNSender.java
+  add:
+    import java.io.FileInputStream;
+  change:
+    //PEMReader       reader           = new PEMReader(new InputStreamReader(new ByteArrayInputStream(pemCertificate.getBytes())));
+    // to
+    PEMReader       reader           = new PEMReader(new InputStreamReader(new FileInputStream(pemCertificate)));
+  change:
+    //reader = new PEMReader(new InputStreamReader(new ByteArrayInputStream(pemKey.getBytes())));
+    // to
+    reader = new PEMReader(new InputStreamReader(new FileInputStream(pemKey)));
+
+config:
+  feedback: false
+  voipKey: 'path/to/voipKey_without_des.pem'
+  pushKey: 'path/to/pushKey_without_des.pem'
+  voipCertificate: 'path/to/pushCert.pem'
+  pushCertificate: 'path/to/pushCert.pem'
+
+# create cert and key from .p12
+    # create cert.pem
+    openssl pkcs12 -in archive.p12 -nokeys -out cert.pem
+
+    # create private key.pem
+    # need to enter password
+    # need to enter passphrase
+    openssl pkcs12 -in archive.p12 -nocerts -out private.pem
+
+    # remove passphrase from key
+    # need to enter passphrase
+    openssl rsa -in private.pem -out private.rsa.pem
