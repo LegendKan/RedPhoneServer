@@ -107,3 +107,7 @@ config:
     # remove passphrase from key
     # need to enter passphrase
     openssl rsa -in private.pem -out private.rsa.pem
+
+Do not forget to mirate you databases before start:
+    java -jar target/TextSecureServer-0.86.jar accountdb migrate
+    java -jar target/TextSecureServer-0.86.jar messagedb migrate
