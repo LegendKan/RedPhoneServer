@@ -10,8 +10,8 @@ twilio:
   localDomain: example.com
 
 push:
-  host: 192.168.2.7
-  port: 8080
+  host: localhost
+  port: 9090
   username: 123
   password: 123
 
