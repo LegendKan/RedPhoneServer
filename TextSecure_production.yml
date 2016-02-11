@@ -1,3 +1,6 @@
+# This is the sample production file for TextSecure Server
+# Pay attention to start TextSecure you need to install PushServer
+
 twilio: 
   accountId: ACa4f1234a3124235433c423423a2fa203
   accountToken: 123a12b1231241241535cd12e124fabc
