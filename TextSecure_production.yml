@@ -1,5 +1,5 @@
-# This is the sample production file for TextSecure Server
-# Pay attention to start TextSecure you need to install PushServer
+# This is the sample config/production.yml file for the TextSecure Server
+# Pay attention! To start TextSecur server you will need to install and start PushServer
 
 twilio: 
   accountId: ACa4f1234a3124235433c423423a2fa203
