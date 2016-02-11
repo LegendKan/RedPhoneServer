@@ -59,13 +59,16 @@ http {
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "upgrade";
         }
-        location /api {
+        location /api/ {
             # or you can use alias to the blank file to add 200 ok;
             # alias /pash/to/blank.html;
+            # or just return 200/204;
             # or proxy to the redphone_master server 
-            proxy_redirect off;
-            proxy_set_header Host $host;
-            proxy_pass http://redphone_master;
+            # example:
+            #     proxy_redirect off;
+            #	  proxy_set_header Host $host;
+            #	  proxy_pass http://redphone_master;
+            return 204;
         }
         location / {
             proxy_redirect off;
