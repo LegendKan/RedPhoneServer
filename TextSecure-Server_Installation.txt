@@ -8,7 +8,7 @@ To start your own TextSecure Server first of all you need to modify your applica
 2. src/org/throughtcrime/seecuresms/jobs/GcmRefreshJob.java:
    change REGISTRATION_ID to your app number in the Google developer console(create app with push and you'll get the number).
 3. Create TLS certificates for secure connections.
-       Convert it in BKS format with names "redphone.store"  and "whisper.store" and put them to res/raw folder
+       Convert certificates in BKS format with names "redphone.store"  and "whisper.store" and put them to res/raw folder
 
 How to Start TextSecure:
 1. Install Maven, JDK and Cryptography extension.
