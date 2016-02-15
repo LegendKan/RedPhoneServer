@@ -8,14 +8,7 @@ To start your own TextSecure Server first of all you need to modify your applica
 2. src/org/throughtcrime/seecuresms/jobs/GcmRefreshJob.java:
    change REGISTRATION_ID to your app number in the Google developer console(create app with push and you'll get the number).
 3. Create TLS certificates for secure connections.
-    If Your Signal app accept the certificate - ok. That's it.
-        If not, you need to modify this:
-        src/org/throughtcrime/redphone/signaling/SignalingSocket.java,
-        src/org/throughtcrime/redphone/signaling/RedPhoneAccountManager.java
-        org/whispersystems/textsecure/internal/websocket/OkHttpClientWrapper:
-
-        You need to put your TrustManagerFactory with the DER format key of your TLS. example here:
-            http://developer.android.com/training/articles/security-ssl.html#UnknownCa
+       Convert it in BKS format with names "redphone.store"  and "whisper.store" and put them to res/raw folder
 
 How to Start TextSecure:
 1. Install Maven, JDK and Cryptography extension.
